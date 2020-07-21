@@ -1,10 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Advanced Search</title>
+        <style>
+        .input-text {
+          width:50%;
+          color:#222;
+          line-height:16px;
+          vertical-align:middle;
+          border-radius: 1px;
+          border: 1px solid #d9d9d9;
+          border-top: 1px solid #c0c0c0;
+          font-size: 13px;
+          height: 25px;
+          text-align: left;
+        }
+        .title{
+          font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+          color: #dd4b39;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font-weight: inherit;
+          font-style: inherit;
+          font-size: 30px;
+          vertical-align: baseline;
+          text-decoration: none;
+        }
+        body{
+          font-family:arial,sans-serif;
+          margin: 40px;
+        }
+        .advance-button {
+          border-radius: 2px;
+          cursor: default;
+          font-size: 11px;
+          font-weight: bold;
+          text-align: center;
+          white-space: nowrap;
+          outline: 0;
+          color: #fff;
+          padding: 0 12px;
+          box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+          background: #357ae8;
+          background-color: #357ae8;
+          background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+          border: 1px solid #2f5bb7;
+          border-image: initial;
+          float: left;
+          margin: 10px 0;
+          user-select: none;
+          line-height: 100%;
+          height: 30px;
+          min-width: 120px;
+        }
+        </style>
     </head>
+
     <body>
-        
-        
+        <h5 class="title"> Advanced Search </h5>
+        <a style="position: absolute; top:40px; right:100px;" href="index.html"> Google Search </a>
+        <form action="https://www.google.com/search" method="GET" name="f">
+          <h4>Find pages with...</h4>
+          <div style = "padding-top:5px;">
+            <label style="padding-right: 82px;" for="all">All these words:    </label>
+            <input autocomplete=off class = "input-text" value="" id="all" name="as_q" type="text">
+          </div>
+          <div style = "padding-top:5px;">
+            <label style="padding-right: 6px;"for="all">This exact word or phrase:   </label>
+            <input autocomplete=off class = "input-text" value="" id="all" name="as_epq" type="text">
+          </div>
+          <div style = "padding-top:5px;">
+            <label style="padding-right: 54px;" for="all">Any of these words:    </label>
+            <input autocomplete=off class = "input-text" value="" id="all" name="as_oq" type="text">
+          </div>
+          <div style = "padding-top:5px;">
+            <label style="padding-right: 43px;" for="all">None of these words:   </label>
+            <input autocomplete=off class = "input-text" value="" id="all" name="as_eq" type="text">
+          </div>
+          <input class="advance-button" value="Advanced Search" type="submit">
+        </form>
     </body>
 </html>
